@@ -1,13 +1,9 @@
 (function() {
-    function ModalInstanceCtrl($uibModalInstance, items) {
+    function ModalInstanceCtrl($uibModalInstance, Room) {
       var $ctrl = this;
-      $ctrl.items = items;
-      $ctrl.selected = {
-        item: $ctrl.items[0]
-      };
 
-      $ctrl.ok = function () {
-        $uibModalInstance.close($ctrl.selected.item);
+      $ctrl.ok = function (name) {
+        $uibModalInstance.close(Room.add(name));
       };
 
       $ctrl.cancel = function () {
@@ -17,5 +13,5 @@
 
     angular
         .module('chat')
-        .controller('ModalInstanceCtrl', ['$uibModalInstance', 'items', ModalInstanceCtrl]);
+        .controller('ModalInstanceCtrl', ['$uibModalInstance', 'Room', ModalInstanceCtrl]);
 })();

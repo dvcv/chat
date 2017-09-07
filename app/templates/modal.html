@@ -1,19 +1,12 @@
-<div ng-controller="HomeCtrl as home" class="modal-demo">
+<div class="modal-demo">
   <div class="modal-header">
-      <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+      <h3 class="modal-title" id="modal-title">New Room</h3>
   </div>
   <div class="modal-body" id="modal-body">
-      <ul>
-          <li ng-repeat="item in home.items">
-              <a href="#" ng-click="$event.preventDefault(); home.selected.item = item">{{ item }}</a>
-          </li>
-      </ul>
-      Selected: <b>{{ home.selected.item }}</b>
+      <input placeholder="Enter a new room name." ng-model="roomName" size="37"></input>
   </div>
   <div class="modal-footer">
-      <button class="btn btn-primary" type="button" ng-click="home.ok()">OK</button>
-      <button class="btn btn-warning" type="button" ng-click="home.cancel()">Cancel</button>
+      <button class="btn btn-primary" type="button" ng-click="modal.ok(roomName)">OK</button>
+      <button class="btn btn-warning" type="button" ng-click="modal.cancel()">Cancel</button>
   </div>
-
-    <div ng-show="home.selected">Selection from a MODAL: {{ home.selected }}</div>
 </div>

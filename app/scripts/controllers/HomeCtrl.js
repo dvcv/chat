@@ -10,8 +10,8 @@
            ariaLabelledBy: 'modal-title',
            ariaDescribedBy: 'modal-body',
            templateUrl: '/templates/modal.html',
-          controller: 'ModalInstanceCtrl',
-          //  controllerAs: '$ctrl',
+           controller: 'ModalInstanceCtrl',
+           controllerAs: 'modal',
            size: size,
            resolve: {
              items: function () {
