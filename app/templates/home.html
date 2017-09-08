@@ -1,7 +1,19 @@
-<h1>Home Page</h1>
-<a ng-click="home.open('sm')">New Room</a>
-<section >
-    <div ng-repeat="room in home.rooms">
-        {{room.$value}}
+<section id="left">
+  <nav class="nav">
+    <h2 class = "title">Bloc Chat</h2>
+    <div class="new-room-container">
+      <a class ="new-room" ng-click="home.open('sm')">New Room</a>
     </div>
+  </nav>
+
+  <div class="rooms" ng-repeat="room in home.rooms">
+      {{room.$value}}
+  </div>
+</section>
+
+
+
+
+<section id="right">
+
 </section>
