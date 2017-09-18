@@ -7,12 +7,12 @@
         <button type="button" class="btn btn-success float-right" ng-click="home.open('sm')">New Room</button>
       </div>
       <div ng-repeat="room in home.rooms">
-        <button type="button" class="btn btn-light" ng-click= "home.room = room; home.setRoom(home.room.$id)">{{room.$value}}</button>
+        <button type="button" class="btn btn-light" ng-click= "home.room = room; home.roomValue = room.$value; home.setRoom(home.room.$id)">{{room.$value}}</button>
       </div>
     </div>
 
     <div class="col">
-      <h2 class="room-title" ng-bind ="home.room.$value || '-'"></h2>
+      <h2 class="room-title">{{home.roomValue}}</h2>
       <div class="d-block" ng-repeat="message in home.messages">
         <div ng-class-odd="'odd'" ng-class-even="'even'">
           <div class="clearfix">

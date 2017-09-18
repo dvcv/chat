@@ -3,6 +3,7 @@
       this.rooms = Room.all;
       this.open = Modal.open;
       this.room = '';
+      this.roomValue = '-';
       this.setRoom = function(room){
         this.room = room;
         this.messages = Message.getByRoomId(room);
