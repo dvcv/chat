@@ -17,7 +17,7 @@
         <div ng-class-odd="'odd'" ng-class-even="'even'">
           <div class="clearfix">
             <p class = "float-left username">{{message.username}}</p>
-            <p class="float-right sentAt">{{message.sentAt | date }}</p>
+            <p class="float-right sentAt">{{message.sentAt | date:'short' }}</p>
           </div>
           <p>{{message.content}}</p>
         </div>
