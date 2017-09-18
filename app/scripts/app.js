@@ -15,6 +15,6 @@
            });
     }
     angular
-        .module('chat', ['ui.router', 'firebase', 'ui.bootstrap','ngAnimate'])
+        .module('chat', ['ui.router', 'firebase', 'ui.bootstrap','ngAnimate', 'ngCookies'])
         .config(config);
 })();

@@ -11,6 +11,8 @@
          controller: 'ModalInstanceCtrl',
          controllerAs: 'modal',
          size: size,
+         backdrop  : 'static',
+         keyboard  : false
        });
 
        modalInstance.result.then(function (selectedItem) {
