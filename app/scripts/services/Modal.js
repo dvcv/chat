@@ -1,6 +1,5 @@
 (function() {
   function Modal($uibModal, $log) {
-    // var ref = firebase.database().ref();
     var Modal = {};
     Modal.animationsEnabled = true;
     Modal.open = function (size) {

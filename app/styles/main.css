@@ -1,87 +1,33 @@
 * {
  padding: 0;
- border: 0;
  margin: 0;
 }
 
-#left {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 250px;
-	background: #cccaca;
+.col-3 {
+ padding-bottom: 25px;
+ background-color: #111111;
+
 }
 
-#right {
-	position: absolute;
-	top: 0;
-	left: 250px;
-	bottom: 0;
-	width: 100%;
-	background: #484248;
-	z-index: 3;
+.col-9 {
+  background-color: #8e8887;
+
 }
 
-.nav {
-    position: relative;
-    padding: 0.5rem;
-    /* #1 */
-    background-color: #cccaca;
-    /* #2 */
-    z-index: 1;
+.title {
+  margin: 0;
 }
 
-.nav .title {
-    position: relative;
-    left: .9rem;
-		color: black;
-  }
-
-.nav .new-room-container {
-    display: table;
-    position: absolute;
-    top: 32px;
-    right: .9rem;
-    height: 20px;
-    /* #3 */
-    text-decoration: none;
-		background: #efebeb;
-		margin: 0;
-		padding: 0;
-		border: solid 1.3px;
-		border-radius: 5px;
-  }
-
-.new-room-container .new-room {
-    display: table-cell;
-    position: relative;
-    height: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-      /* #4 */
-    vertical-align: middle;
-    color: #737070;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-      /* #3 */
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-    /* #5 */
-.new-room-container .new-room:hover {
-    color: #000000;
+.room-title {
+ text-align: center;
+ margin: 0;
 }
 
-.new-room-container .new-room:active {
-    color: #ffffff;
+.btn.btn-light {
+  margin: 10px;
 }
 
-.rooms {
-		padding: 0.5rem;
-		margin-left: .9rem;
-		font-size: 2rem;
+.new-room {
+ margin-top: 10px;
+ color: white;
 }
