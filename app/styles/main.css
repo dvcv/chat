@@ -1,4 +1,4 @@
-* {
+*, p {
  padding: 0;
  margin: 0;
 }
@@ -19,7 +19,6 @@
 }
 
 .room-title {
- text-align: center;
  margin: 0;
 }
 
@@ -30,4 +29,27 @@
 .new-room {
  margin-top: 10px;
  color: white;
+}
+
+.odd {
+  background-color: #ffffff;
+}
+.even {
+  background-color: #c7c7c7;
+}
+
+
+
+#bootstrap-overrides p {
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.sentAt {
+ color: #797979;
 }

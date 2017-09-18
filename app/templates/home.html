@@ -13,12 +13,14 @@
 
     <div class="col-9">
       <h2 class="room-title" ng-bind ="home.room.$value || '-'"></h2>
-      <div class="border border-primary rounded" ng-repeat="message in home.messages">
-        <div class="clearfix">
-          <p class = "float-left">{{message.username}}</p>
-          <p class="float-right">{{message.sentAt}}</p>
+      <div class="d-block" ng-repeat="message in home.messages">
+        <div ng-class-odd="'odd'" ng-class-even="'even'">
+          <div class="clearfix">
+            <p class = "float-left username">{{message.username}}</p>
+            <p class="float-right sentAt">{{message.sentAt}}</p>
+          </div>
+          <p>{{message.content}}</p>
         </div>
-        <p>{{message.content}}</p>
       </div>
     </div>
 
