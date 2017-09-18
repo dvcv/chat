@@ -13,11 +13,6 @@
         backdrop  : 'static',
         keyboard  : false
       })
-
-
-
-
-
     }
   }
 

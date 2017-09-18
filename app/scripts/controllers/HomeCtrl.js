@@ -4,7 +4,14 @@
       this.open = Modal.open;
       this.room = '';
       this.setRoom = function(room){
+        this.room = room;
         this.messages = Message.getByRoomId(room);
+      }
+      this.content = '';
+      this.setMessage = function(){
+        var d = new Date();
+        var n = d.getTime();
+        Message.send({content: this.content, sentAt: n, roomId: this.room});
       }
     }
 

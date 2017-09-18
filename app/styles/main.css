@@ -48,3 +48,12 @@
 .sentAt {
  color: #797979;
 }
+
+.send-message {
+ margin-left: 10px;
+ margin-right: 10px;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}

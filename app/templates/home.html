@@ -17,9 +17,15 @@
         <div ng-class-odd="'odd'" ng-class-even="'even'">
           <div class="clearfix">
             <p class = "float-left username">{{message.username}}</p>
-            <p class="float-right sentAt">{{message.sentAt}}</p>
+            <p class="float-right sentAt">{{message.sentAt | date }}</p>
           </div>
           <p>{{message.content}}</p>
+        </div>
+      </div>
+      <div class="send-message">
+        <div class="clearfix new-message">
+          <input class = "message float-left" ng-model="content">
+          <button type="button" class="btn btn-success float-right" ng-click="home.content = content; home.setMessage()">Send</button>
         </div>
       </div>
     </div>
