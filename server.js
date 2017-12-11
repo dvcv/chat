@@ -4,9 +4,10 @@ const Path = require('path');
 
 dev_host = 'localhost';
 prod_host = 'https://dvcvchat.herokuapp.com/'
+process.env.IP = 'https://dvcvchat.herokuapp.com/'
 let connection = {
     port: process.env.PORT || 3000,
-    host: process.env.IP = 'https://dvcvchat.herokuapp.com/' || 'localhost'
+    host: process.env.IP || 'localhost'
 };
 
 let routes = [
