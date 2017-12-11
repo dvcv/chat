@@ -6,7 +6,7 @@ dev_host = 'localhost';
 prod_host = 'https://dvcvchat.herokuapp.com/'
 process.env.IP = 'https://dvcvchat.herokuapp.com/'
 let connection = {
-    host: 'https://dvcvchat.herokuapp.com/'|| 'localhost'
+    host: 'https://dvcvchat.herokuapp.com/'
 };
 
 let routes = [
