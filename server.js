@@ -2,8 +2,6 @@ const Hapi = require('hapi');
 const Inert = require('inert');
 const Path = require('path');
 
-var dev_host = 'localhost';
-var prod_host = 'https://dvcvchat.herokuapp.com/';
 let connection = {
     port: process.env.PORT || 3000,
     host: process.env.IP || 'localhost'
