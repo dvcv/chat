@@ -3,7 +3,7 @@
       this.rooms = Room.all;
       this.open = Modal.open;
       this.room = '';
-      this.roomValue = '-';
+      this.roomValue = 'Join a Room or Make a Room';
       this.setRoom = function(room){
         this.room = room;
         this.messages = Message.getByRoomId(room);
