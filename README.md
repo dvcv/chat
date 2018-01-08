@@ -3,6 +3,9 @@
 ## Summary
 This project uses AngularJS for front end and Googles Firebase for the backend code. Using firebase allows the user to see text updates in real time without refreshing the page. 
 
+## Live Site
+[dvcvchat](https://dvcvchat.herokuapp.com)
+
 ## Installation 
 
 Start by cloning the repository:
