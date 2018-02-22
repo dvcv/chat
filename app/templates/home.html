@@ -13,19 +13,25 @@
 
     <div class="col">
       <h2 class="room-title">{{home.roomValue}}</h2>
-      <div class="d-block" ng-repeat="message in home.messages">
-        <div ng-class-odd="'odd'" ng-class-even="'even'">
-          <div class="clearfix">
-            <p class = "float-left username">{{message.username}}</p>
-            <p class="float-right sentAt">{{message.sentAt | date:'short' }}</p>
+      <div style="overflow-y:scroll; max-height:88%; min-height:0%">
+        <div class="d-block" ng-repeat="message in home.messages">
+          <div ng-class-odd="'odd'" ng-class-even="'even'">
+            <div class="clearfix">
+              <p class = "float-left username">{{message.username}}</p>
+              <p class="float-right sentAt">{{message.sentAt | date:'short' }}</p>
+            </div>
+            <p>{{message.content}}</p>
           </div>
-          <p>{{message.content}}</p>
         </div>
       </div>
+
+
       <div class="send-message">
         <div class="clearfix new-message">
-          <input class = "message float-left border-box" ng-model="content">
-          <button type="button" class="btn btn-success float-right" ng-click="home.content = content; home.setMessage()">Send</button>
+          <input class = "message float-left" ng-model="content">
+          <div class="send float-right">
+            <button type="button" class="btn btn-success" ng-click="home.content = content; home.setMessage()">Send</button>
+          </div>
         </div>
       </div>
     </div>
